@@ -1,0 +1,169 @@
+
+<html>
+
+<head>
+
+    <title>Волонтёрство</title>
+
+</head>
+
+<body bgcolor="lavender">
+
+<h1>Волонтёрский центр RVC</h1>
+
+
+<a href="index.html">Главная</a> |
+
+<a href="about.html">О нас</a> |
+
+<a href="projects.html">Проекты</a> |
+
+<a href="contact.html">Контакты</a>
+
+<hr>
+
+
+<table>
+
+    <tr>
+
+        <td width="60%" valign="top">
+
+            <h2>Добро пожаловать!</h2>
+
+            <p>
+
+                Волонтёрский центр RVC в Кишинёве — это общественная организация,
+
+                которая объединяет активных людей, готовых помогать обществу и участвовать в социальных инициативах.
+
+            </p>
+
+            <p>
+
+                Основная цель центра — развитие культуры добровольчества, поддержка экологических проектов,
+
+                помощь детям, пожилым людям и животным, а также развитие гражданской активности.
+
+            </p>
+
+            <p>
+
+                Волонтёры участвуют в различных мероприятиях: уборке города, образовательных программах,
+
+                благотворительных акциях и культурных событиях.
+
+            </p>
+
+            <p>
+
+                Каждый участник может выбрать направление, которое ему ближе, и развиваться в команде единомышленников.
+
+            </p>
+
+            <h3>Основные направления:</h3>
+
+            <ul>
+
+                <li>Экология и защита природы</li>
+
+                <li>Образование и развитие детей</li>
+
+                <li>Социальная помощь пожилым людям</li>
+
+                <li>Благотворительные инициативы</li>
+
+            </ul>
+
+        </td>
+
+        <td width="40%">
+
+            <img src="https://i1-c.pinimg.com/736x/9a/ec/34/9aec34ac048fcfda1101ebdc7ec9ca32.jpg" width="400">
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+<h2>Тест: Подойдёт ли вам волонтёрство?</h2>
+
+<form id="quizForm">
+
+<p>1. Любите ли вы помогать другим людям?</p>
+
+<input type="radio" name="q1" value="good"> Да<br>
+
+<input type="radio" name="q1" value="bad"> Не очень<br><br>
+
+<p>2. Готовы ли вы тратить своё свободное время на помощь?</p>
+
+<input type="radio" name="q2" value="good"> Да<br>
+
+<input type="radio" name="q2" value="bad"> Нет<br><br>
+
+<p>3. Нравится ли вам работать в команде?</p>
+
+<input type="radio" name="q3" value="good"> Да<br>
+
+<input type="radio" name="q3" value="bad"> Не знаю<br><br>
+
+<p>4. Хотели бы вы участвовать в полезных проектах?</p>
+
+<input type="radio" name="q4" value="good"> Да<br>
+
+<input type="radio" name="q4" value="bad"> Нет<br><br>
+
+<button type="button" onclick="
+
+var score = 0;
+
+if(document.querySelector('input[name=q1]:checked')?.value=='good') score++;
+
+if(document.querySelector('input[name=q2]:checked')?.value=='good') score++;
+
+if(document.querySelector('input[name=q3]:checked')?.value=='good') score++;
+
+if(document.querySelector('input[name=q4]:checked')?.value=='good') score++;
+
+if(score >= 3){
+
+    alert('Поздравляем! Вы отлично подходите для волонтёрства 💚');
+
+}
+
+else if(score >= 2){
+
+    alert('Вы можете стать волонтёром! Попробуйте себя 😊');
+
+}
+
+else{
+
+    alert('Не расстраивайтесь! Волонтёрство — это навык, который можно развить 💫');
+
+}
+
+">
+
+Проверить
+
+</button>
+
+</form>
+
+</html>
